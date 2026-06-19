@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root {
+  --scout-green: #2D6A4F;
+  --scout-green-light: #40916C;
+  --scout-green-dark: #1B4332;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+input, select, textarea, button {
+  font-size: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+  }
+}
