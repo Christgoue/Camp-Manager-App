@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import { AuthProvider, useAuth } from '@/contexts/AuthContext'
 import { OfflineProvider } from '@/contexts/OfflineContext'
 import { AppLayout } from '@/components/layout/AppLayout'
@@ -60,7 +60,7 @@ function AppRoutes() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <AuthProvider>
         <AppRoutes />
         <Toaster
@@ -71,6 +71,6 @@ export default function App() {
           }}
         />
       </AuthProvider>
-    </BrowserRouter>
+    </Router>
   )
 }
